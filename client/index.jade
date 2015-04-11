@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')      
+    title AJAX Fun
+    link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
+    link(rel='shortcut icon', href='/favicon.ico')
+  body
+    h1 AJAX Fun
+    input#number(type='number', autofocus=true, value='5')
+    button#getRandom Get Quantum Numbers
+    input#sum(type='text')
+    input#min(type='text')
+    input#max(type='text')
+    #roots
+    script(src='/vendor/lodash/lodash.min.js')
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src=isProd ? '/index.min.js' : '/index.js')
